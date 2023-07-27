@@ -4,6 +4,8 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+
+        /***********************PROFE AQUI COLOCA SU RUTA LOCAL EN EL FILEPATH********************************/
         String filePath = "C:\\Users\\Jean Viaña\\Desktop\\workshop-stack-queue\\src\\example.html";
 
         // Leemos el archivo HTML y obtenga las etiquetas como una cola
@@ -23,7 +25,7 @@ public class Main {
         }
 
         System.out.println();
-
+        /***********************PROFE AQUI COLOCA SU RUTA LOCAL EN EL FILEPATH2********************************/
         String filePath2 = "C:\\Users\\Jean Viaña\\Desktop\\workshop-stack-queue\\src\\example2.html";
 
         // Leemos el archivo HTML y obtenga las etiquetas como una cola
@@ -43,7 +45,7 @@ public class Main {
         }
 
         System.out.println();
-
+        /***********************PROFE AQUI COLOCA SU RUTA LOCAL EN EL FILEPATH3********************************/
         String filePath3 = "C:\\Users\\Jean Viaña\\Desktop\\workshop-stack-queue\\src\\example3.html";
 
         // Leemos el archivo HTML y obtenga las etiquetas como una cola

@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String filePath = "https://raw.githubusercontent.com/jvianad/workshop-stack-queue/master/src/example.html";
+        String filePath = "C:\\Users\\Jean Viaña\\Desktop\\workshop-stack-queue\\src\\example.html";
 
         // Leemos el archivo HTML y obtenga las etiquetas como una cola
         Queue<HtmlTag> tags = HtmlReader.getTagsFromHtmlFile(filePath);
@@ -24,7 +24,7 @@ public class Main {
 
         System.out.println();
 
-        String filePath2 = "https://raw.githubusercontent.com/jvianad/workshop-stack-queue/master/src/example2.html";
+        String filePath2 = "C:\\Users\\Jean Viaña\\Desktop\\workshop-stack-queue\\src\\example2.html";
 
         // Leemos el archivo HTML y obtenga las etiquetas como una cola
         Queue<HtmlTag> tags2 = HtmlReader.getTagsFromHtmlFile(filePath2);
@@ -38,6 +38,26 @@ public class Main {
             System.out.println("The HTML file is invalid. Unclosed tags:");
             while (!result2.isEmpty()) {
                 HtmlTag unclosedTag = result2.pop();
+                System.out.println(unclosedTag.getElement());
+            }
+        }
+
+        System.out.println();
+
+        String filePath3 = "C:\\Users\\Jean Viaña\\Desktop\\workshop-stack-queue\\src\\example3.html";
+
+        // Leemos el archivo HTML y obtenga las etiquetas como una cola
+        Queue<HtmlTag> tags3 = HtmlReader.getTagsFromHtmlFile(filePath3);
+
+        // validamos las etiquetas html
+        Stack<HtmlTag> result3 = HtmlValidator.isValidHtml(tags3);
+
+        if (result3.isEmpty()) {
+            System.out.println("The HTML file is well-formatted.");
+        } else {
+            System.out.println("The HTML file is invalid. Unclosed tags:");
+            while (!result3.isEmpty()) {
+                HtmlTag unclosedTag = result3.pop();
                 System.out.println(unclosedTag.getElement());
             }
         }

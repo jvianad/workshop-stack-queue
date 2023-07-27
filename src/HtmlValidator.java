@@ -18,7 +18,6 @@ public class HtmlValidator {
                 stack.pop(); // La etiqueta de cierre coincide con la última etiqueta de apertura, así que se saca
             }
         }
-
         return stack; // aqui me devuelve el stack vacio si esta well formated o bien formateado
     }
 }

@@ -1,10 +1,11 @@
 import java.io.IOException;
+import java.net.URL;
 import java.util.Queue;
 import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String filePath = "C:\\Users\\Jean Viaña\\Desktop\\validator\\src\\example.html";
+        String filePath = "https://github.com/jvianad/workshop-stack-queue/blob/master/src/example.html";
 
         // Leemos el archivo HTML y obtenga las etiquetas como una cola
         Queue<HtmlTag> tags = HtmlReader.getTagsFromHtmlFile(filePath);
@@ -24,7 +25,7 @@ public class Main {
 
         System.out.println();
 
-        String filePath2 = "C:\\Users\\Jean Viaña\\Desktop\\validator\\src\\example2.html";
+        String filePath2 = "https://github.com/jvianad/workshop-stack-queue/blob/master/src/example2.html";
 
         // Leemos el archivo HTML y obtenga las etiquetas como una cola
         Queue<HtmlTag> tags2 = HtmlReader.getTagsFromHtmlFile(filePath2);
